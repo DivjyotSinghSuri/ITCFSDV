@@ -1,0 +1,44 @@
+/* body{
+  background-color: blue;
+} */
+
+/* h2{
+  background-color: rgb(99, 60, 135);
+  color: white;
+} */
+
+/* h2,p,h3{
+  background-color: rgb(59, 35, 82);
+  color: white;
+}
+
+.heading1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+} */
+
+div~p{
+  background-color: blanchedalmond;
+  color: purple;
+}
+p:hover{
+  background-color: beige;
+  font-size: x-large;
+  color: blue;
+}
+
+/* p::after{
+  content: "React Development";
+} */
+
+p::selection{
+  background-color: brown;
+}
+
+p:nth-child(2){
+  background-color: black;
+}
+
+div p:nth-of-type(1){
+
+}

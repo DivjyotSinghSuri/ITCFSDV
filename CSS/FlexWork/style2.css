@@ -1,0 +1,40 @@
+/* body{
+  background-color: tomato;
+} */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(11, 68, 125);
+  border: 3px solid rgb(236, 163, 68);
+  /* gap: 10px; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.child1{
+  height: 300px;
+  width: 300px;
+  background-color: blanchedalmond;
+  border: 1px dotted red;
+}
+.child2{
+  height: 300px;
+  width: 300px;
+  background-color: rgb(26, 130, 90);
+  border: 1px dotted red;
+}
+.child3{
+  color: aliceblue;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(29, 13, 62);
+  border: 1px dotted red;
+}
+.child4{
+  height: 300px;
+  width: 300px;
+  background-color: rgb(91, 15, 20);
+  border: 1px dotted red;
+  color: aliceblue;
+}

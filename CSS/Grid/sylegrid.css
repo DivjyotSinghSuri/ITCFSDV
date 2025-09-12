@@ -1,85 +1,266 @@
 /* body{
   background-color: blue;
 } */
-.box{
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 100px 70px 500px 200px;
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 70px 500px 200px;
 }
 
-.box1{
-border: 1px rgb(0, 0, 0);
-background-color: rgb(245, 240, 240);;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(2,1fr);
-/* grid-column-start: 1;
+.firstcontainer {
+   background: #bf6c28;
+   background: linear-gradient(180deg,rgba(191, 108, 40, 1) 30%, rgba(255, 255, 255, 1) 100%);
+   margin-top: 10px;
+}
+
+.subheading1 {
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+.link1 {
+  margin-left: 15px;
+}
+.box1 {
+  border: 1px rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-column-start: 1;
 grid-column-end: 4;
 grid-row-start: 1;
 grid-row-end: 2; */
-gap: 10px;
-}
-.box11{
-width: 150px;
-height: 150px;
-border: 1px solid rgb(0, 0, 0);
-background-color: rgb(245, 240, 240);
-margin-top: 20px;
-margin-left: 10px;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.box11:hover{
+.box11 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(245, 240, 240);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.box11:hover {
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
-.box12:hover{
+.box12:hover {
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
-.box13:hover{
+.box13:hover {
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
-.box14:hover{
+.box14:hover {
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
-.box12{
-width: 150px;
-height: 150px;
-border: 1px solid rgb(0, 0, 0);
-background-color:bisque;
-margin-top: 20px;
-}
-.box13{
-    width: 150px;
-height: 150px;
-border: 1px solid rgb(0, 0, 0);
-background-color:cornsilk;
-margin-left: 10px;
+.box12 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: bisque;
+  margin-top: 20px;
 }
 
-.box14{
-    width: 150px;
-height: 150px;
-border: 1px solid rgb(0, 0, 0);
-background-color:darkgrey
-}
-.box2{
-border: 1px dotted red;
-background-color:beige;
+.box13 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: cornsilk;
+  margin-left: 10px;
 }
 
-.box3{
-border: 1px dotted red;
-background-color:burlywood;
+.box14 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: darkgrey
 }
-.box4{
-border: 1px dotted red;
-background-color: chocolate;
+.link2 {
+  margin-left: 15px;
+}
+.box2 {
+  border: 1px rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2; */
+  gap: 10px;
+  margin: 10px;
 }
 
-.header{
+.secondcontainer {
+   background: #bf6c28;
+   background: linear-gradient(180deg,rgba(191, 108, 40, 1) 30%, rgba(255, 255, 255, 1) 100%);
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.subheading2 {
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;}
+
+.box21 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(245, 240, 240);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.box22 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: bisque;
+  margin-top: 20px;
+}
+
+.box23 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: cornsilk;
+  margin-left: 10px;
+}
+
+.box24 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: darkgrey
+}
+
+.box21:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box22:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box23:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box24:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+.link3 {
+  margin-left: 15px;
+}
+.thirdcontainer {
+   background: #bf6c28;
+   background: linear-gradient(180deg,rgba(191, 108, 40, 1) 30%, rgba(255, 255, 255, 1) 100%);
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.subheading3 {
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+.box3 {
+  border: 1px rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.box31 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(245, 240, 240);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.box32 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: bisque;
+  margin-top: 20px;
+}
+
+.box33 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: cornsilk;
+  margin-left: 10px;
+}
+
+.box34 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: darkgrey
+}
+
+.box31:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box32:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box33:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box34:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box4 {
+  border: 1px rgb(0, 0, 0);
+  background: #bf6c28;
+ background: linear-gradient(180deg,rgba(191, 108, 40, 1) 30%, rgba(255, 255, 255, 1) 100%);
+margin-top: 10px;
+}
+
+
+.box41 {
+  width: 300px;
+  height: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(245, 240, 240);
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.box42 {
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: bisque;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+.header {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -91,7 +272,8 @@ background-color: chocolate;
   justify-content: space-evenly;
   align-items: center;
 }
-.subheader{
+
+.subheader {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -104,12 +286,12 @@ background-color: chocolate;
   align-items: center;
 }
 
-.subheader:hover{
-background-color: rgb(33, 39, 39);
-cursor: pointer;
+.subheader:hover {
+  background-color: rgb(33, 39, 39);
+  cursor: pointer;
 }
 
-.footer{
+.footer {
   background-color: dimgray;
   grid-column-start: 1;
   grid-column-end: 5;

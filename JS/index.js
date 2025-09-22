@@ -63,33 +63,81 @@
 // greet();
 // greet("How are you?");
 
-function selectlanguage(lang="Python"){
-  let result;
-  if(lang=="java"){
-    function javaCompiler(){
-      return "Using Java Compiler"
-    }
+// function selectlanguage(lang="Python"){
+//   let result;
+//   if(lang=="java"){
+//     function javaCompiler(){
+//       return "Using Java Compiler"
+//     }
 
-    result = javaCompiler();
-  }
-  else if(lang=="c"){
-    function Ccompiler(){
-      return "Using C compiler"
-    }
+//     result = javaCompiler();
+//   }
+//   else if(lang=="c"){
+//     function Ccompiler(){
+//       return "Using C compiler"
+//     }
 
-    result=Ccompiler();
-  } 
-  else if(lang=="Python"){
-    function PythonCompiler(){
-      return "Using Python compiler"
-    }
+//     result=Ccompiler();
+//   } 
+//   else if(lang=="Python"){
+//     function PythonCompiler(){
+//       return "Using Python compiler"
+//     }
 
-    result=PythonCompiler();
-  }
-  else{
-    result="No compiler found";
-  }
-return result;
+//     result=PythonCompiler();
+//   }
+//   else{
+//     result="No compiler found";
+//   }
+// return result;
+// }
+
+// console.log(selectlanguage());
+
+
+// const div=document.getElementsByTagName("div");
+
+// div[0].innerText="Hello";
+// div[0].style.color='red';
+// div[0]. style.backgroundColor='green';
+// console.log(div);
+
+const container = document.getElementsByClassName("container");
+
+// container[0].innerHTML="<h2 style.color:'red'> Hello </h2>"
+// console.dir(container);
+
+const h2 = document.createElement('h2');
+h2.innerText = "ABES ENGINEERING COLLEGE";
+h2.style.color = "maroon";
+h2.style.backgroundColor = "yellow";
+console.log(h2);
+container[0].appendChild(h2);
+
+
+const button = document.getElementById('btn');
+console.log(button);
+
+document.getElementById('disp').innerHTML = "<h4>loading image...</h4>";
+
+function msg() {
+  const h3 = document.createElement('h3');
+  h3.innerText = "Welcome to ABES ENGINEERING COLLEGE";
+  h3.style.color = "yellow";
+  h3.style.backgroundColor = "maroon";
+  container[0].appendChild(h3);
+
+  const img = document.createElement('img');
+  img.src = 'https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg';
+  img.setAttribute("height", "200px");
+  img.setAttribute("width", "450px");
+  console.log(img);
+  container[0].appendChild(img);
+
+  document.getElementById('disp').innerHTML = "";
+
+  // console.log("Hi, i am working on MERN stack.");
+  // alert("Hi, i am using DOM.")
+
 }
-
-console.log(selectlanguage());
+button.addEventListener('click', msg);

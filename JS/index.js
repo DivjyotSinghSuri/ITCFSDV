@@ -171,25 +171,76 @@
 // })
 
 //PROMISE
-const mypromise=new Promise((resolve,reject)=>{
-const password='987ghzn21';
-if (password.length>8){
-  resolve("Password length is ok.");}
-else { 
-    reject("Password length is not as per our policy");
-  }
-});
+// const mypromise=new Promise((resolve,reject)=>{
+// const password='987ghzn21';
+// if (password.length>8){
+//   resolve("Password length is ok.");}
+// else { 
+//     reject("Password length is not as per our policy");
+//   }
+// });
 
 
-mypromise.then((result)=>{console.log(result)})
-.catch((err)=>{console.log(err)})
-.finally(()=>{
-  console.log("All the resources have closed succesfully");
-})
+// mypromise.then((result)=>{console.log(result)})
+// .catch((err)=>{console.log(err)})
+// .finally(()=>{
+//   console.log("All the resources have closed succesfully");
+// })
 
-function handleData(){
-  // console.log(mypromise);
-  const data = await mypromise;
-  console.log(data);
+// function handleData(){
+//   // console.log(mypromise);
+//   const data = await mypromise;
+//   console.log(data);
+// }
+// handleData();
+
+// const button = document.getElementById('btn');
+// const disp = document.getElementById('disp');
+
+// async function fetchData() {
+//   disp.innerHTML = 'Data is loading...';
+//   const response = await fetch('https://dummyjson.com/recipes');
+//   const jsonData = await response.json();
+//   console.log(jsonData.recipes);
+
+//   let table = '<table border="1">';
+//   jsonData.recipes.forEach(element => {
+//     table += `<tr>
+//       <td><img src="${element.image}" height="200" width="200" alt="image"></td>
+//       <td>${element.id}</td>
+//       <td>${element.name}</td>
+//       <td>${element.ingredients.join(', ')}</td>
+//     </tr>`;
+//   });
+//   table += '</table>';
+  
+//   disp.innerHTML = table;
+// }
+
+// button.addEventListener('click', fetchData);
+
+const button = document.getElementById('btn');
+const disp = document.getElementById('disp');
+
+async function fetchData() {
+  disp.innerHTML = 'Data is loading...';
+  const response = await fetch('https://dummyjson.com/users');
+  const jsonData = await response.json();
+  console.log(jsonData.users);
+
+  let table = '<table border="1">';
+  jsonData.users.forEach(user => {
+    table += `<tr>
+      <td><img src="${user.image}" alt="User Image" width="100" height="100"></td>
+      <td>${user.id}</td>
+      <td>${user.firstName}</td>
+      <td>${user.lastName}</td>
+      <td>${user.age}</td>
+    </tr>`;
+  });
+  table += '</table>';
+  
+  disp.innerHTML = table;
 }
-handleData();
+
+button.addEventListener('click', fetchData);

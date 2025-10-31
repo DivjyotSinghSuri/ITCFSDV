@@ -1,6 +1,8 @@
 .container{
   background-color: chocolate;
   color: white;
-  padding-left: 400px;
+  /* padding-left: 400px; */
+  width:400px;
+
  
 }

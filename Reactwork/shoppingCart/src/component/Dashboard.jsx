@@ -7,7 +7,7 @@ function Dashboard() {
   const [error, setError] = useState("");
   const [showCart, setShowCart] = useState(false);
 
-  // Fetch product data from API
+
   useEffect(() => {
     async function fetchProducts() {
       try {
@@ -26,16 +26,13 @@ function Dashboard() {
     fetchProducts();
   }, []);
 
-  // Add selected item to cart
   const addToCart = (item) => {
     setCart([...cart, item]);
     alert(`${item.title.slice(0, 20)} added to cart!`);
   };
 
-  // Calculate cart total
   const cartTotal = cart.reduce((total, item) => total + item.price, 0);
 
-  // Checkout/Payment
   const handleCheckout = () => {
     alert(`Payment of $${cartTotal.toFixed(2)} successful!`);
     setCart([]);
@@ -47,6 +44,22 @@ function Dashboard() {
 
   return (
     <div style={{ padding: "20px" }}>
+
+      {/* TOP TOTAL BAR */}
+      <div
+        style={{
+          background: "#f0f0f0",
+          padding: "12px 18px",
+          marginBottom: "20px",
+          borderRadius: "8px",
+          fontSize: "18px",
+          fontWeight: "600"
+        }}
+      >
+        Cart Total:{" "}
+        <span style={{ color: "green" }}>${cartTotal.toFixed(2)}</span>
+      </div>
+
       {/* Toggle Cart View */}
       <button
         onClick={() => setShowCart(!showCart)}
@@ -100,13 +113,16 @@ function Dashboard() {
                       }}
                     />
                     <h4>{item.title.slice(0, 30)}...</h4>
-                    <p><b>Price: ${item.price}</b></p>
+                    <p>
+                      <b>Price: ${item.price}</b>
+                    </p>
                   </div>
                 ))}
               </div>
 
               <h2 style={{ marginTop: "10px" }}>
-                🧾 Total Price: <span style={{ color: "green" }}>${cartTotal.toFixed(2)}</span>
+                🧾 Total Price:{" "}
+                <span style={{ color: "green" }}>${cartTotal.toFixed(2)}</span>
               </h2>
 
               <button
@@ -162,7 +178,9 @@ function Dashboard() {
                 />
 
                 <h4>{item.title.slice(0, 30)}...</h4>
-                <p><b>${item.price}</b></p>
+                <p>
+                  <b>${item.price}</b>
+                </p>
 
                 <button
                   onClick={() => addToCart(item)}

@@ -7,6 +7,7 @@ import Login from './component/Login'
 import Registration from './component/Registration'
 import Dashboard from './component/Dashboard'
 import FinalLayout from './component/FinalLayout'
+import Cart from './component/Cart'
 
 function App() {
  const[data,setData]=useState();

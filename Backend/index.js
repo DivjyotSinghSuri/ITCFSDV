@@ -2,7 +2,13 @@ const http= require('http');
 
  const PORT = 4001;
 const sum=require("./apiCall")
- const server = http.createServer((req, res) => {
+ const server = http.createServer(async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+
         if(req.url == "/msg" && req.method == "GET"){
             res.setHeader("Content-Type", "text/html");
             res.end(JSON.stringify({msg:"Welcome inside /msg endpoint"}))
@@ -11,10 +17,10 @@ const sum=require("./apiCall")
         // const data={
         //     name: "Divjyot",
         //     age: 29,
-        //     email: "shuri@gmai.com"
+        //     email: "shuri@gmail.com"
         // }
 
-        const data = sum(30,40);
+        const data = await sum();
         res.end(JSON.stringify({msg:data}));
     }
  })
